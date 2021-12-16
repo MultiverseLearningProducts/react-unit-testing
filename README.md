@@ -16,9 +16,14 @@ The learning today is based on the excellent [React Testing Libary Tutorial](htt
    * [Full Modern React Video Tutorial](https://www.youtube.com/playlist?list=PL4cUxeGkcC9gZD-Tvwfod2gaISzfRiP9d) 
 
 ## Getting started
-`git clone https://github.com/harblaith7/React-Testing-Library-Net-Ninja`
+1. `git clone https://github.com/harblaith7/React-Testing-Library-Net-Ninja`
+1. `cd React-Testing-Library-Net-Ninja`
+1. `git checkout 01-Starter-Project`
+1. Open VSCode and bring up a terminal in the `React-Testing-Library-Net-Ninja` directory.
+1. `npm install`
 
-`git checkout 01-Starter-Project`
+To run the sample React app type `npm start`
+To run the tests, create another terminal window and type `npm run test` (or `npm run test -t <name of test class>`)
 
 ## Creating your own React app
 We recommend following the [Simple React Shopping Cart for Absolute Beginners video course](https://www.youtube.com/watch?v=AmIdY1Eb8tY) and modifying this to suit your chosen application.
