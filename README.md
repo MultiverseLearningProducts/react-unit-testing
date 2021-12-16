@@ -50,5 +50,18 @@ describe("Test suite for my Header component tests", () => {
 
 })
 ```
+
+## Example mock when using Routers
+```javascript
+const MockTodoFooter = ({ numberOfIncompleteTasks }) => {
+    return (
+        <BrowserRouter>
+            <TodoFooter numberOfIncompleteTasks={numberOfIncompleteTasks}>
+            </TodoFooter>
+        </BrowserRouter>
+    )
+}
+```
+
 ## Creating your own React app
 We recommend following the [Simple React Shopping Cart for Absolute Beginners video course](https://www.youtube.com/watch?v=AmIdY1Eb8tY) and modifying this to suit your chosen application.
