@@ -23,6 +23,7 @@ The learning today is based on the excellent [React Testing Libary Tutorial](htt
 1. `npm install`
 
 To run the sample React app type `npm start`
+
 To run the tests, create another terminal window and type `npm run test` (or `npm run test -t <name of test class>`)
 
 ## Creating your own React app
