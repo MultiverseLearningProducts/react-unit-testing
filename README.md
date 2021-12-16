@@ -24,7 +24,9 @@ The learning today is based on the excellent [React Testing Libary Tutorial](htt
 
 To run the sample React app type `npm start`
 
-To run the tests, create another terminal window and type `npm run test` (or `npm run test -t <name of test class>`)
+To run the tests, create another terminal window and type `npm run test` (or `npm run test -t <name of test class>`).
+
+I will walk you through creating tests in the same way that the [React Testing Library video](https://testing-library.com/docs/react-testing-library/intro/) does.
 
 ## Creating your own React app
 We recommend following the [Simple React Shopping Cart for Absolute Beginners video course](https://www.youtube.com/watch?v=AmIdY1Eb8tY) and modifying this to suit your chosen application.
