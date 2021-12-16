@@ -29,7 +29,7 @@ To run the tests, create another terminal window and type `npm run test` (or `np
 
 I will walk you through creating tests in the same way that the [React Testing Library video](https://testing-library.com/docs/react-testing-library/intro/) does.
 
-## Your first test
+## Your first test (Header.test.js)
 ```javascript
 import { render, screen } from '@testing-library/react';
 import Header from '../Header';
@@ -51,7 +51,7 @@ describe("Test suite for my Header component tests", () => {
 })
 ```
 
-## Example mock when using Routers
+## Example mock when using Routers (TodoFooter.test.js)
 ```javascript
 import { BrowserRouter } from "react-router-dom"
 import { render, screen } from '@testing-library/react';
@@ -70,6 +70,15 @@ describe ("Todo Footer", () => {
     test('should render the correct number of incomplete tasks', () => {
         render(<MockTodoFooter numberOfIncompleteTasks={2} />);
     ....
+```
+
+## Simulating events (AddInput.test.js)
+```javascript
+        const inputElement = screen.getByPlaceholderText("Add a new task here...");
+        fireEvent.change(inputElement, {target: {value:"Another task I need to do"}}) // changing the input text
+
+        const button = screen.getByRole("button");
+        fireEvent.click(button); // simulate button click
 ```
 
 ## Creating your own React app
