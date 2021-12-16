@@ -29,5 +29,26 @@ To run the tests, create another terminal window and type `npm run test` (or `np
 
 I will walk you through creating tests in the same way that the [React Testing Library video](https://testing-library.com/docs/react-testing-library/intro/) does.
 
+## Your first test
+```javascript
+import { render, screen } from '@testing-library/react';
+import Header from '../Header';
+
+
+describe("Test suite for my Header component tests", () => { 
+
+    test('check that the header appears correctly', () => {
+        // 1. Render the component under test
+        render(<Header title="My fantastic TODO application" />);
+
+        // 2. Locate the element we want to interact with
+        const headerText = screen.getByText("My fantastic TODO application");
+
+        // 3. We assert it is in the DOM
+        expect(headerText).toBeInTheDocument();
+    });
+
+})
+```
 ## Creating your own React app
 We recommend following the [Simple React Shopping Cart for Absolute Beginners video course](https://www.youtube.com/watch?v=AmIdY1Eb8tY) and modifying this to suit your chosen application.
