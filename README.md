@@ -20,7 +20,7 @@ The learning today is based on the excellent [React Testing Libary Tutorial](htt
 1. `git clone https://github.com/<your git account name>/React-Testing-Library-Net-Ninja`
 1. `cd React-Testing-Library-Net-Ninja`
 1. `git checkout 01-Starter-Project`
-1. Open VSCode and bring up a terminal in the `React-Testing-Library-Net-Ninja` directory.
+1. Open VSCode and select the React-Testing-Library-Net-Ninja folder, then bring up a terminal in the `React-Testing-Library-Net-Ninja` directory.
 1. `npm install`
 
 To run the sample React app type `npm start`
