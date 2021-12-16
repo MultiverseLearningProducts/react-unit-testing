@@ -61,6 +61,11 @@ const MockTodoFooter = ({ numberOfIncompleteTasks }) => {
         </BrowserRouter>
     )
 }
+
+describe ("Todo Footer", () => {
+    test('should render the correct number of incomplete tasks', () => {
+        render(<MockTodoFooter numberOfIncompleteTasks={2} />);
+    ....
 ```
 
 ## Creating your own React app
