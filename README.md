@@ -53,6 +53,10 @@ describe("Test suite for my Header component tests", () => {
 
 ## Example mock when using Routers
 ```javascript
+import { BrowserRouter } from "react-router-dom"
+import { render, screen } from '@testing-library/react';
+import TodoFooter from '../TodoFooter';
+
 const MockTodoFooter = ({ numberOfIncompleteTasks }) => {
     return (
         <BrowserRouter>
